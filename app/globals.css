@@ -2,32 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    padding: 0;
+    margin: 0;
+    background-color: #0D0C22;
+    color: aliceblue;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/*modified slider styles*/
+.slider-container .slick-slider .slick-dots li button::before {
+    color: rgba(14 165 233 / 0.75)
+}
+
+.slider-container .slick-slider button::before {
+    color: rgba(14 165 233 / 0.75);
+}
+
+.slider-container .slick-slider .slick-list .slick-slide {
+    padding-right: 20px;
+}
+
+/*contact info cards hover effect*/
+.parent-div:hover .icon-div {
+    background-color: #0D0C22;
+    color: rgba(14 165 233 / 0.75);
+    -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -ms-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+/*blog card styles and hover effects*/
+.blogCard {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    color: white;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    -webkit-transform: translate(-50%, -47%);
+    -moz-transform: translate(-50%, -47%);
+    -ms-transform: translate(-50%, -47%);
+    -o-transform: translate(-50%, -47%);
+    transform: translate(-50%, -47%);
+}
+
+.blog-card:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.blog-card:hover .overlay-content {
+    opacity: 1; /* Show overlay content on hover */
 }
