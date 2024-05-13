@@ -13,9 +13,9 @@ import AnimatedDiv from '@/components/AnimatedDiv';
 
 const About = () => {
     return (
-        <div>
+        <div className=''>
             <AnimatedDiv>
-                <div className='grid sm:grid-cols-1 lg:grid-cols-2 gap-2'>
+                <div className='grid sm:grid-cols-1 lg:grid-cols-2 gap-2 py-4 lg:py-10 '>
                     <div>
                         <div>
                             <div className='flex items-center'>
@@ -43,7 +43,7 @@ const About = () => {
                 </div>
             </AnimatedDiv>
             <AnimatedDiv>
-                <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-10'>
+                <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-10 py-4 lg:py-10'>
                     <div>
                         <h3 className='text-sky-500/75 font-extrabold text-4xl tracking-wide'><AnimatedNumber value={10} /></h3>
                         <h5 className='font-bold text-xl'>Years of Experience</h5>
@@ -96,7 +96,7 @@ const About = () => {
                 </ul>
             </AnimatedDiv>
             <AnimatedDiv>
-                <div className='grid sm:grid-cols-1 lg:grid-cols-2 gap-4'>
+                <div className='grid sm:grid-cols-1 lg:grid-cols-2 gap-4 py-4 lg:py-10'>
                     <div className='flex item-center justify-center'>
                         <Lottie animationData={missionAnimation} style={{ height: '400px', width: '400px' }} />
                     </div>
@@ -125,17 +125,19 @@ const About = () => {
                 </div>
             </AnimatedDiv>
             <AnimatedDiv>
-                <div className='flex items-center'>
-                    <Lottie animationData={pointerAnimation} style={{ height: '90px', width: '90px' }} />
-                    <h1 className='text-sky-500/75 font-extrabold my-6 text-3xl'>Our Team</h1>
+                <div className='py-4 lg:py-10'>
+                    <div className='flex items-center'>
+                        <Lottie animationData={pointerAnimation} style={{ height: '90px', width: '90px' }} />
+                        <h1 className='text-sky-500/75 font-extrabold my-6 text-3xl'>Our Team</h1>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                        numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                        optio, eaque rerum! Provident similique accusantium nemo autem.
+                    </p>
+                    <TeamMembers />
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-                    optio, eaque rerum! Provident similique accusantium nemo autem.
-                </p>
-                <TeamMembers />
             </AnimatedDiv>
             <AnimatedDiv>
                 <div className='flex items-center'>

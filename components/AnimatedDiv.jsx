@@ -37,7 +37,6 @@ const AnimatedDiv = ({ children }) => {
                 duration: 0.5,
                 delay: 0.25
             }}
-            className='py-4 lg:py-10'
         >
             {children}
         </motion.div>

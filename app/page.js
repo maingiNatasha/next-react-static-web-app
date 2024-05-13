@@ -12,7 +12,7 @@ const Home = () => {
 
 	return (
 		<AnimatedDiv>
-			<div className='grid sm:grid-cols-1 lg:grid-cols-2 gap-2'>
+			<div className='grid sm:grid-cols-1 lg:grid-cols-2 gap-2 py-4 lg:py-10'>
 				<div>
 					<div>
 						<h1 className='font-bold text-6xl md:text-7xl lg:text-8xl mb-6'>Creative Thoughts Agency.</h1>
@@ -36,10 +36,10 @@ const Home = () => {
 							ease: "easeInOut",
 						}}
 					>
-						<motion.button className='bg-sky-500/75 rounded py-3 px-8 font-bold' onClick={() => router.push('/about')}>
+						<motion.button className='bg-sky-500/75 rounded py-2 px-8 font-bold' onClick={() => router.push('/about')}>
 							Learn More
 						</motion.button>
-						<motion.button className='bg-white text-black font-bold rounded py-3 px-8' onClick={() => router.push('/contact')}>
+						<motion.button className='bg-white text-black font-bold rounded py-2 px-8' onClick={() => router.push('/contact')}>
 							Contact
 						</motion.button>
 					</MotionConfig>

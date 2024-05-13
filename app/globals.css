@@ -49,7 +49,7 @@ body {
     left: 0;
     width: 95%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
     -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
@@ -82,4 +82,20 @@ body {
 
 .blog-card:hover .overlay-content {
     opacity: 1; /* Show overlay content on hover */
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    /* Adjust container width for other blog component */
+    .other-blog-container {
+        max-width: 75%;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Adjust blog image height for other blogs */
+    .other-blog-image {
+        width: auto;
+        height: 166px;
+    }
 }

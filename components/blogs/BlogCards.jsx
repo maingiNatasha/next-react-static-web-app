@@ -48,12 +48,10 @@ const BlogCards = () => {
                             <div className='overlay-content'>
                                 <div className='flex flex-col space-y-2 lg:items-center text-[15px] lg:text-[16px]'>
                                     <div className='flex items-center'>
-                                        <span className='font-bold mr-1 lg:mr-2'>Author:</span>
-                                        <MdPersonPin size={25} className='mr-1 lg:mr-2' />
-                                        <span>{blog.author}</span>
+                                        <Image src={blog?.authorImage} alt='author-image' width={40} height={40} className='rounded-full mr-1 lg:mr-2' />
+                                        <span>{blog?.author}</span>
                                     </div>
                                     <div className='flex items-center'>
-                                        <span className='font-bold mr-1 lg:mr-2'>Published:</span>
                                         <MdEditCalendar size={25} className='mr-1 lg:mr-2' />
                                         <span>{blog.date}</span>
                                     </div>
@@ -79,7 +77,7 @@ const BlogCards = () => {
                             }}
                             className='font-bold bg-sky-500/75 py-2 px-4 lg:px-6 rounded-md my-4'
                         >
-                            <Link href={`/blogs/${blog._id}`} className='flex items-center'>
+                            <Link href={`/blogs/${blog._id}?id=${blog._id}`} className='flex items-center'>
                                 Read More
                                 <FaArrowRight size={20} className='ml-2' />
                             </Link>
