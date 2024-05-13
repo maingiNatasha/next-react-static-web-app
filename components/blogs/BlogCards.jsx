@@ -32,7 +32,7 @@ const BlogCards = () => {
                     }
                 }
             }}
-            className='space-y-8 w-[90%] md:w-[100%] lg:w-[85%]'
+            className='space-y-8 w-[96%] md:w-[100%] lg:w-[85%]'
         >
             {blogs.map((blog) => (
                 <motion.div

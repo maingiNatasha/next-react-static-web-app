@@ -27,7 +27,7 @@ const MobileLinks = ({ toggleNavbar }) => {
             variants={{
                 visible: {
                     transition: {
-                        staggerChildren: 0.5,
+                        staggerChildren: 0.25,
                     }
                 }
             }}

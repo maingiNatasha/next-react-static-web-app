@@ -84,6 +84,12 @@ body {
     opacity: 1; /* Show overlay content on hover */
 }
 
+/* Adjust pointer size */
+.pointer {
+    width: 50px;
+    height: 50px;
+}
+
 @media only screen and (min-width: 600px) and (max-width: 767px) {
     /* Adjust container width for other blog component */
     .other-blog-container {
@@ -97,5 +103,11 @@ body {
     .other-blog-image {
         width: auto;
         height: 166px;
+    }
+
+    /* Adjust pointer size */
+    .pointer {
+        width: 80px;
+        height: 80px;
     }
 }

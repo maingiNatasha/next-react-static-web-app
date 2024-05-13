@@ -54,7 +54,7 @@ const ContactForm = () => {
                             duration: 0.25,
                             ease: 'easeInOut'
                         }}
-                        className='bg-sky-500/60 p-3 rounded-md w-[40%] font-bold mt-4'
+                        className='bg-sky-500/60 p-3 rounded-md md:w-[40%] font-bold mt-4'
                         type='submit'
                         disabled={loading}
                     >

@@ -11,7 +11,7 @@ const AnimatedDiv = ({ children }) => {
     const divVariants = {
         hidden: {
             opacity: 0,
-            y: 75
+            y: 100
         },
         visible: {
             opacity: 1,
@@ -35,7 +35,7 @@ const AnimatedDiv = ({ children }) => {
             animate={control}
             transition={{
                 duration: 0.5,
-                delay: 0.25
+                delay: 0.15
             }}
         >
             {children}

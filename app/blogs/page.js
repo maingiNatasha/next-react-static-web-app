@@ -7,11 +7,11 @@ import pointerAnimation from '../lottie-assets/pointer.json';
 
 const Blogs = () => {
     return (
-        <div className='py-4'>
+        <div className='py-4 md:py-6'>
             <div>
                 <AnimatedContainer>
-					<div className='flex items-center'>
-						<Lottie animationData={pointerAnimation} style={{ height: '90px', width: '90px' }} />
+					<div className='flex items-center pl-5 md:pl-0 lg:pl-20'>
+						<Lottie animationData={pointerAnimation} className='pointer' />
 						<h1 className='text-sky-500/75 font-extrabold my-6 text-3xl'>Blogs</h1>
 					</div>
 				</AnimatedContainer>

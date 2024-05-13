@@ -5,6 +5,8 @@ import { FaArrowRight } from "react-icons/fa";
 import Link from 'next/link';
 import { motion } from "framer-motion";
 import AnimatedDiv from '../AnimatedDiv';
+import Lottie from 'lottie-react';
+import pointerAnimation from '../../app/lottie-assets/pointer.json';
 
 const OtherBlogs = ({ blogs }) => {
     console.log(blogs);
@@ -12,10 +14,13 @@ const OtherBlogs = ({ blogs }) => {
     return (
         <div className='w-[98%] md:w-[80%] lg:w-[60%]'>
             <AnimatedDiv>
-                <h1 className='text-3xl font-extrabold text-sky-500/75'>See other related blogs</h1>
+                <div className='flex items-center'>
+                    <Lottie animationData={pointerAnimation} className='pointer' />
+                    <h1 className='text-sky-500/75 font-extrabold my-6 text-3xl'>Other related blogs</h1>
+                </div>
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4 py-4'>
                     {blogs?.map((blog) => (
-                        <div className='other-blog-container' key={blog.id}>
+                        <div key={blog?._id} className='other-blog-container'>
                             <Image src={blog?.image} alt="blog-image" className='other-blog-image' />
                             <div className='flex items-center py-4'>
                                 <Image src={blog?.authorImage} alt='author-image' width={40} height={40} className='rounded-full mr-4' />

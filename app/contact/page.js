@@ -10,11 +10,11 @@ import NewsletterForm from '@/components/contact/NewsletterForm';
 
 const Contact = () => {
     return (
-		<>
+		<div className='py-4 md:py-6'>
 			<div>
 				<AnimatedContainer>
 					<div className='flex items-center'>
-						<Lottie animationData={pointerAnimation} style={{ height: '90px', width: '90px' }} />
+						<Lottie animationData={pointerAnimation} className='pointer' />
 						<h1 className='text-sky-500/75 font-extrabold my-6 text-3xl'>How to reach us</h1>
 					</div>
 				</AnimatedContainer>
@@ -25,10 +25,10 @@ const Contact = () => {
 			<div className='py-4 lg:py-10'>
 				<AnimatedContainer>
 					<div className='flex items-center'>
-						<Lottie animationData={pointerAnimation} style={{ height: '90px', width: '90px' }} />
+						<Lottie animationData={pointerAnimation} className='pointer' />
 						<h1 className='text-sky-500/75 font-extrabold my-6 text-3xl'>Get in touch</h1>
 					</div>
-					<div className='grid sm:grid-cols-1 lg:grid-cols-2 gap-4'>
+					<div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
 						<div className='flex items-center justify-center flex-col'>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 							<Lottie animationData={contactAnimation} />
@@ -42,7 +42,7 @@ const Contact = () => {
 			<div className='py-4 lg:py-10'>
 				<AnimatedContainer>
 					<div className='flex items-center'>
-						<Lottie animationData={pointerAnimation} style={{ height: '90px', width: '90px' }} />
+						<Lottie animationData={pointerAnimation} className='pointer' />
 						<h1 className='text-sky-500/75 font-extrabold my-6 text-3xl'>Stay up to date</h1>
 					</div>
 				</AnimatedContainer>
@@ -63,7 +63,7 @@ const Contact = () => {
 					</div>
 				</AnimatedContainer>
 			</div>
-		</>
+		</div>
     )
 }
 

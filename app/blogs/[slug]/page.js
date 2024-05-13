@@ -31,7 +31,7 @@ const BlogPostPage = () => {
     }, [id]);
 
     return (
-        <div className='py-4 lg:py-10'>
+        <div className='py-4 md:py-6'>
             <div className='flex flex-col items-center justify-center'>
                 <BlogPost blog={blog} />
                 <OtherBlogs blogs={otherBlogs} />

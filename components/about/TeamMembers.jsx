@@ -25,13 +25,13 @@ const TeamMembers = () => {
             variants={{
                 visible: {
                     transition: {
-                        staggerChildren: 0.5,
-                        delayChildren: 0.5,
+                        staggerChildren: 0.25,
+                        delayChildren: 0.25,
                     }
                 }
             }}
             viewport={{ once: true }}
-            className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-10 gap-8 sm:px-20 md:px-0'
+            className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 pt-10 gap-8 sm:px-20 md:px-0'
         >
             {members.map((member) => (
                 <motion.div

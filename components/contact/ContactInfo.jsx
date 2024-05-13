@@ -25,12 +25,12 @@ const ContactInfo = () => {
                 animate: {
                     transition: {
                         staggerChildren: 0.5,
-                        delayChildren: 0.25
+                        // delayChildren: 0.15
                     }
                 }
             }}
             viewport={{ once: true}}
-            className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'
+            className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'
         >
             <MotionConfig
                 whileHover={{

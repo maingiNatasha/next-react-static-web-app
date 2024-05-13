@@ -12,8 +12,8 @@ const Home = () => {
 
 	return (
 		<AnimatedDiv>
-			<div className='grid sm:grid-cols-1 lg:grid-cols-2 gap-2 py-4 lg:py-10'>
-				<div>
+			<div className='grid grid-cols-1 lg:grid-cols-2 gap-2 py-4 md:py-6 lg:py-10'>
+				<div className='md:px-6'>
 					<div>
 						<h1 className='font-bold text-6xl md:text-7xl lg:text-8xl mb-6'>Creative Thoughts Agency.</h1>
 						<p className='my-2'>
@@ -44,7 +44,7 @@ const Home = () => {
 						</motion.button>
 					</MotionConfig>
 					</div>
-					<div className='flex space-x-8 items-center'>
+					<div className='flex space-x-6 md:space-x-20 items-center'>
 						<MotionConfig
 							whileHover={{
 								scale: 1.1,
@@ -71,7 +71,9 @@ const Home = () => {
 					</div>
 				</div>
 				<div>
-					<Lottie animationData={animationData} />
+					<div className='flex items-center justify-center'>
+						<Lottie animationData={animationData} />
+					</div>
 				</div>
 			</div>
 		</AnimatedDiv>
